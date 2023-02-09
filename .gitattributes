@@ -30,7 +30,7 @@ def get_text_messages(message):
         bot.send_message(message.from_user.id, 'Вы выбираете тип генерации(картинка/текст), затем выбираете нейросеть в которой хотите сделать это. Пишете слово или стиль(в зависимости оттого что вы выбрали)', parse_mode='Markdown')
 
     elif message.text == 'Тарифы':
-        bot.send_message(message.from_user.id, 'Первые три запроса бесплатные, последующие уже платны. Тарифы: 1 запрос - $, 2 запроса - $$', parse_mode='Markdown')
+        bot.send_message(message.from_user.id, 'Первые три запроса бесплатные, последующие уже платны. Тарифы: 1 запрос - $ 2 запроса - $$', parse_mode='Markdown')
 
     elif message.text == 'Помощь':
         bot.send_message(message.from_user.id, 'В случае неполадок обратитесь по номеру 89045566778921', parse_mode='Markdown')
